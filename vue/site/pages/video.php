@@ -10,8 +10,8 @@
         <?php 
         while($compt_ann < 5 && $video = $prepare_compte->fetch()) { 
         ?>
-        <div classe="box">
-            <div class="gauche">
+        <div>
+            <div>
                 <h3><?php echo $video['titre'];?></h3>
                 <p>Date: <?php echo $video['date'];?></p>
                 <p>Auteur: <?php echo $video['auteur'];?></p>

@@ -1,6 +1,7 @@
 <?php 
 $pageactive = 'compte';
 include('modele/connexion_bdd.php');
+
 $message="";
 
 if (!empty($_POST['Envoyer']))
