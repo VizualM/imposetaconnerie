@@ -7,7 +7,10 @@
     <title>Impose ta connerie</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
-    <link href="vue/site/styles/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="vue/site/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/kickstart.js"></script> <!-- KICKSTART -->
+    <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
 </head>
     
 <body>
