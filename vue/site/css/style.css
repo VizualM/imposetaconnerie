@@ -13,51 +13,55 @@ body
 		background-image:url(../../../img/font/lama.jpg);
         background-attachment: fixed;
 	}
+#container
+    {   
+        margin: auto 0;
+        width: 1080px;
+    }
 	
-#header
+#header_background
     {
-        position: absolute;
         top: 0px;
         width: 100%;
         height: 70px;
         background: black;
-        text-decoration: none;
-        text-transform: none;
-        color: white;
     }
+
 #header #titre
     {
         float: left;
     }
+
 #header #menu ul li
     {
-        
-        text-transform: none;
         margin: 70px;
         float: left;
     }
+
 .article
     {
         margin-top: 80px;
         background-color: white;
         width: 1080px;
+        border: solid 1px red;
     }
-.article .content_gauche
+
+.content_gauche
     {
         width: 540px;
         height: 600px;
-        margin-bottom: 100px;
         float: left;
     }
-.article .content_droite
+
+.content_droite
     {
-        width: 540px;
+        width: 538px;
         height: 600px;
-        margin-bottom: 100px;
         float: left;
         
     }
-.article .twiter 
+
+.content_droite .twiter 
     {
         margin-top: 150px;
     }
