@@ -1,22 +1,18 @@
 <?php $pageactive = 'image'; ?>
 <?php include('vue/site/include/header.php');?>
 
-<div id="page" class="container">
-	<div class="title">
-		<h2>Images insolite</h2>	
-	</div>
 
-    <div>
+    <div class="article">
         <?php 
         while($img = $prepare_compte->fetch()) { 
         ?>
-        <div classe="box">
-            <div class="gauche">
-                <h3><?php echo $img['titre'];?></h3>
+        <div class="content">
+                <h2><?php echo $img['titre'];?></h2>
                 <p>Date: <?php echo $img['date'];?></p>
                 <p>Auteur: <?php echo $img['auteur'];?></p>
-                <img src="img/img/<?php echo $img['nom_image'];?>.jpg" />
-            </div>
+                <img class="caption" title="<?php echo $img['nom_image'];?>" src="img/img/<?php echo $img['nom_image'];?>"/>
+               
+        
         </div>        
         <?php 
             $compt_ann = $compt_ann + 1; } 

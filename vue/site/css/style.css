@@ -6,11 +6,11 @@ html, body
 	
 body
 	{
-		margin: 0px;
+        width: 1080px;
+		margin: auto ;
 		padding: 0px;
 		background-image:url(../../../img/font/lama.jpg);
         background-attachment: fixed;
-		font-family: 'Source Sans Pro', sans-serif;
 	}
 	
 #header
@@ -34,4 +34,17 @@ body
         text-transform: none;
         margin: 70px;
         float: left;
+    }
+.article
+    {
+        margin-top: 80px;
+        background-color: white;
+        width: 1080px;
+        border: solid 1px black;
+    }
+.article .content
+    {
+        width: 540px;
+        margin-bottom: 100px;
+        border: solid 2px red;
     }
