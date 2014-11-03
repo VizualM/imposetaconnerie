@@ -10,8 +10,8 @@
     
     <link href="vue/site/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="vue\site\js/kickstart.js"></script> <!-- KICKSTART -->
-    <link rel="stylesheet" href="vue\site\css/kickstart.css" media="all" /> <!-- KICKSTART -->
+    <script src="vue/site/js/kickstart.js"></script> <!-- KICKSTART -->
+    <link rel="stylesheet" href="vue/site/css/kickstart.css" media="all" /> <!-- KICKSTART -->
 </head>
 <body>
     
@@ -43,6 +43,7 @@
                 }
                 ?>
         </div>
+        
 	</div>
     
     <div class="notice error">Fermer ce message si vous le voyez = KickStarte Work ! <a href="http://google.fr" class="icon-remove"></a></div>

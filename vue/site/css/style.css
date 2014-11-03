@@ -8,8 +8,7 @@ html, body
 body
 	{
         width: 1080px;
-		margin: auto ;
-        margin-left: 0px;
+		margin: auto 0px;
 		padding: 0px;
 		background-image:url(../../../img/font/lama.jpg);
         background-attachment: fixed;
