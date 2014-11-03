@@ -10,10 +10,9 @@
     
     <link href="vue/site/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/kickstart.js"></script> <!-- KICKSTART -->
-    <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+    <script src="vue\site\js/kickstart.js"></script> <!-- KICKSTART -->
+    <link rel="stylesheet" href="vue\site\css/kickstart.css" media="all" /> <!-- KICKSTART -->
 </head>
-    
 <body>
     
 	<div id="header">
@@ -23,9 +22,10 @@
         
         <div id="menu">
             <ul>
-                <li><a href="index.php?section=image" title="">Image</a></li>
+                <li class="icon-camera icon-large"><a href="index.php?section=image" title="">Image</a></li>
                 <li><a href="index.php?section=gif"  title="">Gif</a></li>
                 <li><a href="index.php?section=video" title="">Vidéo</a></li>
+            
                 <!--<li><a href="index.php?section=compte" title="">Compte</a></li>-->
 
                 <?php 
@@ -44,3 +44,7 @@
                 ?>
         </div>
 	</div>
+    
+    <div class="notice error">Fermer ce message si vous le voyez = KickStarte Work ! <a href="http://google.fr" class="icon-remove"></a></div>
+
+ 
