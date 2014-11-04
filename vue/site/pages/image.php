@@ -14,7 +14,7 @@
         </div>
         
         <div class="content_droite">
-            <div class="twiter">
+            <div class="twitter">
                 <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Impose Ta Connerie">Tweet</a>
                 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
             </div>

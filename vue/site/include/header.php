@@ -26,22 +26,17 @@
                     <li><a href="index.php?section=gif"  title="">Gif</a></li>
                     <li><a href="index.php?section=video" title="">Vidéo</a></li>
 
-                    <!--<li><a href="index.php?section=compte" title="">Compte</a></li>-->
-
                     <?php 
                     if(isset($_SESSION['id_utilisateur'])>0)
                     { 
                     ?>
-                                    <li><a href="modele/site/deconnexion.php">Déconnection</a></li>
-                                    <li><a href="index.php?section=profil">Profil</a></li>
+                        <li><a href="modele/site/deconnexion.php">Déconnection</a></li>
+                        <li><a href="index.php?section=profil">Profil</a></li>
                 </ul>
                 <?php
                     }
-                    else
-                    {
-                    include ('vue/site/include/identification.php');
-                    }
-                    ?>
+                    else{ include ('vue/site/include/identification.php');}
+                ?>
             </div>
         </div>
     </div>
