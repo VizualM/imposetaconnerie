@@ -7,10 +7,17 @@
     <div class="article">
         
         <div class="content_gauche">
+            
+            <div class="info_image">
                 <h2><?php echo $img['titre'];?></h2>
                 <p>Date: <?php echo $img['date'];?></p>
                 <p>Auteur: <?php echo $img['auteur'];?></p>
-                <img class="caption" title="<?php echo $img['nom_image'];?>" src="img/img/<?php echo $img['nom_image'];?>"/>
+            </div>
+            
+            <div class="images">
+                <img title="<?php echo $img['nom_image'];?>" src="img/img/<?php echo $img['nom_image'];?>"/>
+            </div>
+            
         </div>
         
         <div class="content_droite">

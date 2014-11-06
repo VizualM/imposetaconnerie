@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Lun 03 Novembre 2014 à 10:14
+-- Généré le :  Jeu 06 Novembre 2014 à 11:54
 -- Version du serveur :  5.5.34
 -- Version de PHP :  5.5.10
 
@@ -34,30 +34,16 @@ CREATE TABLE `gif` (
 --
 
 INSERT INTO `gif` (`id`, `titre`, `nom_image`, `date`, `auteur`) VALUES
-(7, 'test', '', '2014-05-21', 'fenyouse'),
-(8, 'test 2', '', '2014-05-22', 'fenyouse'),
-(9, 'test 2', '', '2014-05-22', 'fenyouse'),
-(10, 'test 2', '', '2014-05-22', 'fenyouse'),
-(11, 'test 2', '', '2014-05-22', 'fenyouse'),
-(12, 'test 2', '', '2014-05-22', 'fenyouse'),
-(13, 'test 2', '', '2014-05-22', 'fenyouse'),
-(14, 'test 2', '', '2014-05-22', 'fenyouse'),
-(15, 'test 2', '', '2014-05-22', 'fenyouse'),
-(16, 'test 2', '', '2014-05-22', 'fenyouse'),
-(17, 'test 2', '', '2014-05-22', 'fenyouse'),
-(18, 'test 2', '', '2014-05-22', 'fenyouse'),
-(19, 'test 2', '', '2014-05-22', 'fenyouse'),
-(20, 'test 2', '', '2014-05-22', 'fenyouse'),
-(21, 'test 2', '', '2014-05-22', 'fenyouse'),
-(22, 'test 2', '', '2014-05-22', 'fenyouse'),
-(23, 'test 2', '', '2014-05-22', 'fenyouse'),
-(24, 'test 2', '', '2014-05-22', 'fenyouse'),
-(25, 'test 2', '', '2014-05-22', 'fenyouse'),
-(26, 'test 2', '', '2014-05-22', 'fenyouse'),
-(27, 'test 2', '', '2014-05-22', 'fenyouse'),
-(28, 'test 2', '', '2014-05-22', 'fenyouse'),
-(29, 'test 2', '', '2014-05-22', 'fenyouse'),
-(30, 'test 2', '', '2014-05-22', 'fenyouse');
+(7, 'test', 'a5N1O3V_460sa_v1.gif', '2014-05-21', 'fenyouse'),
+(8, 'test 2', 'a5NQ0yr_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(9, 'test 2', 'a49o06w_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(10, 'test 2', 'aBQybnQ_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(11, 'test 2', 'ae3rD7b_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(12, 'test 2', 'aEGqep9_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(13, 'test 2', 'ag0mLqv_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(14, 'test 2', 'ag0myE1_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(15, 'test 2', 'aj6Vy1R_460sa_v1.gif', '2014-05-22', 'fenyouse'),
+(16, 'test 2', 'azL248B_460sa_v1.gif', '2014-05-22', 'fenyouse');
 
 -- --------------------------------------------------------
 
@@ -72,37 +58,16 @@ CREATE TABLE `img` (
   `date` date NOT NULL,
   `auteur` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Contenu de la table `img`
 --
 
 INSERT INTO `img` (`id`, `titre`, `nom_image`, `date`, `auteur`) VALUES
-(7, 'test', '', '2014-05-21', 'fenyouse'),
-(8, 'test 2', '', '2014-05-22', 'fenyouse'),
-(9, 'test 2', '', '2014-05-22', 'fenyouse'),
-(10, 'test 2', '', '2014-05-22', 'fenyouse'),
-(11, 'test 2', '', '2014-05-22', 'fenyouse'),
-(12, 'test 2', '', '2014-05-22', 'fenyouse'),
-(13, 'test 2', '', '2014-05-22', 'fenyouse'),
-(14, 'test 2', '', '2014-05-22', 'fenyouse'),
-(15, 'test 2', '', '2014-05-22', 'fenyouse'),
-(16, 'test 2', '', '2014-05-22', 'fenyouse'),
-(17, 'test 2', '', '2014-05-22', 'fenyouse'),
-(18, 'test 2', '', '2014-05-22', 'fenyouse'),
-(19, 'test 2', '', '2014-05-22', 'fenyouse'),
-(20, 'test 2', '', '2014-05-22', 'fenyouse'),
-(21, 'test 2', '', '2014-05-22', 'fenyouse'),
-(22, 'test 2', '', '2014-05-22', 'fenyouse'),
-(23, 'test 2', '', '2014-05-22', 'fenyouse'),
-(24, 'test 2', '', '2014-05-22', 'fenyouse'),
-(25, 'test 2', '', '2014-05-22', 'fenyouse'),
-(26, 'test 2', '', '2014-05-22', 'fenyouse'),
-(27, 'test 2', '', '2014-05-22', 'fenyouse'),
-(28, 'test 2', '', '2014-05-22', 'fenyouse'),
-(29, 'test 2', '', '2014-05-22', 'fenyouse'),
-(30, 'test 2', '', '2014-05-22', 'fenyouse');
+(7, 'test', 'a1ZWbjR_460s.jpg', '2014-05-21', 'fenyouse'),
+(8, 'test 2', 'a1ZWbjR_460s.jpg', '2014-05-22', 'fenyouse'),
+(9, 'test 2', 'a1ZWbjR_460s.jpg', '2014-05-22', 'fenyouse');
 
 -- --------------------------------------------------------
 

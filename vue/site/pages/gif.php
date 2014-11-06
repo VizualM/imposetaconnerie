@@ -1,27 +1,37 @@
 <?php $pageactive = 'gif'; ?>
 <?php include('vue/site/include/header.php');?>
 
-<div id="page" class="container">
-	<div class="title">
-		<h2>Gif insolite</h2>	
-	</div>
 
-    <div>
-        <?php 
-        while($gif = $prepare_compte->fetch()) { 
-        ?>
-        <div classe="box">
-            <div class="gauche">
-                <h3><?php echo $gif['titre'];?></h3>
+
+<?php 
+    while($gif = $prepare_compte->fetch()) { 
+?>
+    <div class="article">
+
+        <div class="content_gauche">
+            
+            <div class="info_image">
+                <h2><?php echo $gif['titre'];?></h2>
                 <p>Date: <?php echo $gif['date'];?></p>
                 <p>Auteur: <?php echo $gif['auteur'];?></p>
-                <img src="img/gif/<?php echo $gif['nom_image'];?>.gif" />
             </div>
-        </div>        
-        <?php 
-            $compt_ann = $compt_ann + 1; } 
-        ?>
-    </div>
+            
+            <div class="images">
+                <img title="<?php echo $gif['nom_image'];?>" src="img/gif/<?php echo $gif['nom_image'];?>"/>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="content_droite">
+            <div class="twitter">
+                <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Impose Ta Connerie">Tweet</a>
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+            </div>
+        </div>
 
-</div>
+    </div>
+<?php 
+    $compt_ann = $compt_ann + 1; } 
+?>
+     
 <?php include('vue/site/include/footer.php'); ?>

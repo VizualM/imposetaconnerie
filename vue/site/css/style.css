@@ -8,7 +8,10 @@ html, body
 body
 	{
         width: 100%;
+        
 		padding: 0px;
+        margin: 0px;
+        
 		background-image:url(../../../img/font/lama.jpg);
         background-attachment: fixed;
 	}
@@ -43,24 +46,49 @@ body
 
 .article
     {
-        margin:25px auto 25px auto;
-        border: solid 1px gray;
-        height: 600px;
-        background-color: white;
+        margin:25px auto 50px auto;
+        
         width: 1080px;
+        
+        display:flex;
+        
+        background-color: white;
+       
+        border: solid 1px gray;
+        border-radius: 10px;
     }
 
 .content_gauche
     {
         width: 540px;
-        height: 600px;
+        
         float: left;
+        
+        border-right: solid 1px gray;
     }
+.content_gauche .info_image
+    {
+        margin-left: 50px;
+    }
+
+.content_gauche .images
+    {
+        margin:25px auto 50px auto;
+        border: solid 5px gray;
+        border-radius: 5px;
+        width: 450px;
+        
+        
+    }
+.content_gauche .images img
+    {
+        width: 100%;
+    }
+
 
 .content_droite
     {
         width: 530px;
-        height: 600px;
         float: left;
         
     }
@@ -69,3 +97,4 @@ body
     {
         margin-top: 150px;
     }
+.clear { clear: both;}
