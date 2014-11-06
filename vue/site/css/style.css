@@ -31,6 +31,7 @@ body
     {
         margin: auto;
         width: 1080px;
+        height: 100px;
     }
 
 #header #titre
@@ -40,7 +41,7 @@ body
 
 #header #menu ul li
     {
-        margin: 70px;
+        margin: 40px;
         float: left;
     }
 
