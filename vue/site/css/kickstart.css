@@ -19,8 +19,8 @@
 -moz-box-sizing: border-box;    /* Firefox, other Gecko */
 box-sizing: border-box;         /* Opera/IE 8+ */
 }
-a{color:#4D99E0;outline:0;}
-a:active{color:inherit;}
+a{color:#47D69E;outline:0;text-decoration:none;}
+a:active{color:#255753;}
 a:visited{}
 a:hover{}
 a img{border:0;}
@@ -63,7 +63,8 @@ line-height:140%;
 
 h1{
 font-size:3.5em;
-margin:10px 0 10px 0;
+margin:10px 95px 10px 0;
+text-decoration:none; 
 }
 
 h2{

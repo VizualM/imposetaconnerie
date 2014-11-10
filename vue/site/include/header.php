@@ -22,9 +22,9 @@
 
             <div id="menu">
                 <ul>
-                    <li class="icon-camera icon-large"><a href="index.php?section=image" title="">Image</a></li>
-                    <li><a href="index.php?section=gif"  title="">Gif</a></li>
-                    <li><a href="index.php?section=video" title="">Vidéo</a></li>
+                    <li><a href="index.php?section=image" title="Images" class="icon-camera-retro icon-2x"></a></li>
+                    <li><a href="index.php?section=gif"  title="Gifs" class="icon-magic icon-2x"></a></li>
+                    <li><a href="index.php?section=video" title="Vidéos" class="icon-facetime-video icon-2x"></a></li>
 
                     <?php 
                     if(isset($_SESSION['id_utilisateur'])>0)
