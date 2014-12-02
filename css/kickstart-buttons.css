@@ -26,7 +26,7 @@ padding:10px 15px;
 line-height:100%;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
-border-radius:15px;
+border-radius:5px;
 cursor: pointer;
 width:auto;
 overflow:visible;
@@ -72,6 +72,11 @@ input[type="button"]{*padding:7px 15px;}/*IE 7 ONLY*/
 	button.medium, a.btn.medium, a.button.medium{}/*default*/
 	button.large, a.btn.large, a.button.large{font-size:1.3em;padding:10px 20px;}
 	button.disabled, a.btn.disabled,
+button.tooltip.medium.pill {
+ margin-top: 35px;
+ margin-left: 15px;
+}
+button.disabled, a.btn.disabled,
 button.tooltip.medium.pill {
  margin-top: 35px;
  margin-left: 15px;

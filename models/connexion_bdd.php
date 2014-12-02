@@ -1,11 +1,15 @@
 <?php
 	try
 	{
-		$db = new PDO('mysql:host=localhost;dbname=impose', 'root', '');
+        global $db;
+        
+		$db =new PDO('mysql:host=localhost;dbname=impose', 'root', 'root');
 		$db->query('SET NAMES utf8');
+        
 	}
 	catch (Exception $e)
 	{
 		die('Erreur : ' . $e->getMessage());
 	}
+
 ?>

@@ -23,9 +23,9 @@
               }
             ?>
 
-            <input type="text" name="Pseudo" placeholder="Pseudonyme">
+            <input type="text" name="Pseudo" placeholder="Pseudo">
             <input type="password" name="MotDePasse" placeholder="Mot de passe">
-            <button type="submit">Connexion</button>
+            <button type="submit">OK!</button>
         </form>
         
         <a href="index.php?section=inscription">Créer un compte</a>
