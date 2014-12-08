@@ -36,6 +36,20 @@ body
         height: 100px;
     }
 
+twitter_head
+{
+    position: absolute;
+    right: 250px;
+    top: 50px;
+}
+
+facebook_head
+{
+    position: absolute;
+    right: 250px;
+    top: 20px;
+}
+
 #header #titre
     {
         float: left;
@@ -130,3 +144,5 @@ facebook
         border: solid 1px gray;
         border-radius: 10px;
 }
+#social{margin: 0;}
+.element{display:inline-block;margin: 0 15px;vertical-align:top;}

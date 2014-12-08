@@ -18,12 +18,12 @@
             </div>
 
             <div class="content_droite">
-                <div class="twitter">
-                    <a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="Impose Ta Connerie">Tweet</a>
-                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-                </div>
+                <ul id="social">
+                    <li class="element"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Impose Ta Connerie">Tweet</a>
+                    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+                    <li class="element"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><div class="fb-like" data-share="false" data-width="450" data-show-faces="true" layout=button_count></div></li>
+                </ul>   
             </div>
-
         </div>
 
   <?php endforeach; ?>
