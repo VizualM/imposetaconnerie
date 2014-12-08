@@ -119,3 +119,14 @@ facebook
 }
 
 .clear { clear: both;}
+.inscription {
+        margin: auto;
+        position: absolute;
+        width: auto;
+        
+        
+        background-color: white;
+       
+        border: solid 1px gray;
+        border-radius: 10px;
+}
