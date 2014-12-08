@@ -28,7 +28,7 @@
             <button type="submit">OK!</button>
         </form>
         
-        <a href="index.php?section=inscription">Créer un compte</a>
+        <a href="<?php echo $app->urlFor('inscription') ?>">Créer un compte</a>
         
     </div>
 </div>

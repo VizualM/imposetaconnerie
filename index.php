@@ -84,7 +84,12 @@
     );
   })->name('gif'); 
 
-
+// GET inscription.php
+  $app->get('/inscription/', function () use ($app) {
+    $app->render(
+        'inscription/inscription.php'
+    );
+  })->name('inscription'); 
 
 
 
