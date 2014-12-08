@@ -42,19 +42,27 @@ require 'models/connexion_bdd.php';
         
             static function all() {
             
-                global $db;
+            global $db;
       
-          	//requete dans variable
             $ma_requete = 'SELECT * FROM img';
-            //prepare
             $prepa_marequete = $db->prepare($ma_requete);
-            //execute
             $exerc_marequette = $prepa_marequete->execute();
-            //affiche
-
+           
+    
+            return $prepa_marequete->fetchAll();
+                
         }
-        static function getImage($image_id) {
         
+        static function getImage($image_id) {
+            
+            global $db;
+            
+            $ma_requete = "SELECT * FROM img WHERE id = $image_id";
+            $prepa_marequete = $db->prepare($ma_requete);
+            $exerc_marequette = $prepa_marequete->execute();
+            
+            return $prepa_marequete->fetch();
+    
         } 
     
     }
@@ -63,9 +71,26 @@ require 'models/connexion_bdd.php';
 
     class Gif {
             static function all() {
+               
+                global $db;
+
+                $ma_requete = 'SELECT * FROM gif';
+                $prepa_marequete = $db->prepare($ma_requete);
+                $exerc_marequette = $prepa_marequete->execute();
+
+                return $prepa_marequete->fetchAll();
+                
 
             }
             static function getGif($gif_id) {
+                
+                global $db;
+            
+                $ma_requete = "SELECT * FROM gif WHERE id = $gif_id";
+                $prepa_marequete = $db->prepare($ma_requete);
+                $exerc_marequette = $prepa_marequete->execute();
+
+                return $prepa_marequete->fetch();
 
             } 
 

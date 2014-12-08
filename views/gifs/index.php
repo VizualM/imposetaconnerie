@@ -1,13 +1,4 @@
-<?php
-require 'models/connexion_bdd.php';
-
-$compt_ann = 0; 
-    $compte = "SELECT * FROM gif ";
-    $prepare_compte = $db->prepare($compte);
-    $execute_compte = $prepare_compte->execute();
-
-    while($gif = $prepare_compte->fetch()) { 
-?>
+<?php foreach ($this->data['gifs'] as $gif): ?>
 
         <div class="article">
 
@@ -17,10 +8,11 @@ $compt_ann = 0;
                     <h2><?php echo $gif['titre'];?></h2>
                     <p>Date: <?php echo $gif['date'];?></p>
                     <p>Auteur: <?php echo $gif['auteur'];?></p>
+                    
                 </div>
 
                 <div class="images">
-                    <img title="<?php echo $gif['nom_image'];?>" src="../img/gif/<?php echo $gif['nom_image'];?>"/>
+                    <a href="<?php echo $app->urlFor('gif', array('gif_id' => $gif['id'])) ?>"><img title="<?php echo $gif['nom_image'];?>" src="../img/gif/<?php echo $gif['nom_image'];?>"/></a>
                 </div>
 
             </div>
@@ -34,7 +26,4 @@ $compt_ann = 0;
 
         </div>
 
-
-<?php 
-    $compt_ann = $compt_ann + 1; } 
-?>
+  <?php endforeach; ?>

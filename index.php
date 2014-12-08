@@ -42,7 +42,9 @@
     $images = Image::all();
     $app->render(
         'images/index.php',
-        array("images"=>$images)
+        array(
+            "images" => $images
+        )
     );
   })->name('images');
 
@@ -50,23 +52,37 @@
   // GET /images/:image_id
   $app->get('/images/:image_id', function ($image_id) use ($app) {
     $image = Image::getImage($image_id);
-    $app->render('images/show.php');
-  })->name('image'); 
+    $app->render(
+        'images/show.php',
+        array(
+            "image" => $image
+        )
+    );
+})->name('image'); 
 
 
 // GET /gifs
   $app->get('/gifs/', function() use ($app) {
-    $gifs = Gif::all();
-    $app->render('gifs/index.php');
-  })->name('gifs'); // named route so I can use with "urlFor" method
+      $gifs = Gif::all();
+    $app->render(
+        'gifs/index.php',
+        array(
+            "gifs" => $gifs
+        )
+    );
+  })->name('gifs');
 
 
   // GET /gifs/:gif_id
-  $app->get('/gifs/:gif_id', function ($book_id) use ($app) {
+  $app->get('/gifs/:gif_id', function ($gif_id) use ($app) {
     $gif = Gif::getGif($gif_id);
-    $app->render('gifs/show.php');
-  })->name('gif'); // named route so I can use with "urlFor" method
-
+    $app->render(
+        'gifs/show.php',
+        array(
+            "gif" => $gif
+        )
+    );
+  })->name('gif'); 
 
 
 
