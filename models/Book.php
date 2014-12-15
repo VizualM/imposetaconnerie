@@ -95,4 +95,31 @@ require 'models/connexion_bdd.php';
             } 
 
         }
+
+/* class Videos {
+            static function all() {
+               
+                global $db;
+
+                $ma_requete = 'SELECT * FROM video';
+                $prepa_marequete = $db->prepare($ma_requete);
+                $exerc_marequette = $prepa_marequete->execute();
+
+                return $prepa_marequete->fetchAll();
+                
+
+            }
+            static function getVideo($video_id) {
+                
+                global $db;
+            
+                $ma_requete = "SELECT * FROM video WHERE id = $video_id";
+                $prepa_marequete = $db->prepare($ma_requete);
+                $exerc_marequette = $prepa_marequete->execute();
+
+                return $prepa_marequete->fetch();
+
+            } 
+
+        }*/
 ?>

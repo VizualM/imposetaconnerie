@@ -1,16 +1,14 @@
 <?php
-    if($_POST['pseudo'] != NULL AND $_POST['mdp'] != NULL AND $_POST['mdp_confirm'] != NULL AND $_POST['mail'] != NULL AND $_POST['mail_confirm'] != NULL AND $_POST['mdp'] == $_POST['mdp_confirm'] AND $_POST['mail'] == $_POST['mail_confirm'])
-    {
         try
         {
             $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
             $bdd = new PDO('mysql:host=localhost;dbname=team_alez', 'root', '',   $pdo_options);
     
-            $req = $bdd->prepare('INSERT INTO infos_principales_utilisateur(pseudo, mdp, mail) VALUES(:pseudo, :mdp, :mail)');
+            $req = $bdd->prepare('INSERT INTO utilisateurs(Pseudo, MotDePasse, Email) VALUES(:pseudo, :mdp, :mail)');
             $req->execute(array(
-            'pseudo' => $_POST['pseudo'],
-            'mdp' => $_POST['mdp'],
-            'mail' => $_POST['mail']
+            'Pseudo' => $_POST['pseudo'],
+            'MotDePasse' => $_POST['mdp'],
+            'Email' => $_POST['mail']
             ));
 			
             header('Location: inscription.php');

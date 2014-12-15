@@ -134,7 +134,9 @@ facebook
 
 .clear { clear: both;}
 .inscription {
-        margin: auto;
+        
+        margin-left: 50em;
+        margin-top:15em;
         position: absolute;
         width: auto;
         
