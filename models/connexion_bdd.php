@@ -3,7 +3,7 @@
 	{
         global $db;
         
-		$db =new PDO('mysql:host=localhost;dbname=impose', 'root', 'root');
+		$db =new PDO('mysql:host=localhost;dbname=impose', 'root', '');
 		$db->query('SET NAMES utf8');
         
 	}
