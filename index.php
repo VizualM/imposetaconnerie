@@ -87,14 +87,21 @@ $app = new \Slim\Slim(array(
     );
   })->name('gifs_individuelle');
 
-/*
+
 // GET inscription.php
-  $app->get('/inscription', function () use ($app) {
-    $app->render(
-        'inscription.php'
-    );
-  })->name('inscription'); 
-*/
+     $app->get('/inscription', function () use ($app) {
+    
+        $app->render('inscription.php');
+      
+  })->name('inscription');
+
+//POST inscription.php
+$app->post('/inscription', function () use ($app) {
+        user::inscription($_POST['prenom'], $_POST['nom'], $_POST['pseudo'], $_POST['mdp'], $_POST['mdp_confirm'], $_POST['mail'], $_POST['mail_confirm']);
+        $app->render('inscription.php');
+      
+  })->name('inscription_valide');
+
 
 // GET connexion.php
   $app->post('/connexion', function () use ($app) {

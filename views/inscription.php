@@ -35,5 +35,5 @@
 						
 	<input type="submit" value="Valider" class="valider" />
     </p>
-    <!-- Code beta -->
+    
 </form>

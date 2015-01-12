@@ -2,7 +2,7 @@
 
     class user {
         
-        public static function inscription($prenom, $nom, $pseudo, $mdp, $mail) {
+        public static function inscription($prenom, $nom, $pseudo, $mdp, $mdp_confirm, $mail, $mail_confirm) {
             $bdd=DB::connexion_bdd();
             
             $prenom = mysql_real_escape_string(htmlspecialchars($_POST['prenom']));
@@ -19,11 +19,11 @@
                 $req = $bdd->prepare('INSERT INTO utilisateurs(Prenom, Nom, Pseudo, MotDePasse, Email) VALUES(:prenom, :nom, :pseudo, :mdp, :mail)');
                         $req->execute(array(
                         
-                        'Prenom' => $prenom,
-                        'Nom' => $nom,
-                        'Pseudo' => $pseudo,
-                        'MotDePasse' => $mdp,
-                        'Email' => $mail
+                        'prenom' => $prenom,
+                        'nom' => $nom,
+                        'pseudo' => $pseudo,
+                        'mdp' => $mdp,
+                        'mail' => $mail
                         ));
                     return true;
                 }
