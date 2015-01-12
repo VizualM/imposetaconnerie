@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20396545405ea9eb29c0ebbc3fddd40d",
+    "hash": "366119fc173e897cdad6fd0794cc1ce3",
     "packages": [
         {
             "name": "petebrowne/slim-layout-view",
