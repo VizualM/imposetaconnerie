@@ -47,7 +47,7 @@
         public static function connexion($pseudo,$mdp) {
             $bdd = DB::connexion_bdd();
 
-            $pseudo = $_POST['Pseudo'];;
+            $pseudo = $_POST['Pseudo'];
             $mdp = $_POST['MotDePasse'];
 
             if(isset($pseudo) AND $pseudo!="" AND isset($mdp) AND $mdp!="") {
@@ -60,11 +60,11 @@
                 
                 $donnees = $req->fetch();   
                 if($donnees){ 
-                  foreach ($donnees as $key => $value) {
                     
-                    $_SESSION[$key]=$value;
+                    $_SESSION["Pseudo"]=$pseudo;
+                    $_SESSION["MotDePasse"]=$mdp;
                     
-                  }
+                  
                 }
             }
             

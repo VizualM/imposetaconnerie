@@ -144,19 +144,6 @@ $app->post('/inscription', function () use ($app) {
   })->name('profil');
 
 
-/*
-$app->post('/inscription', function () use ($app) {
-	$inscripted = user::inscription($_POST['prenom'], $_POST['nom'], $_POST['pseudo'], $_POST['mdp'], $_POST['mail']);
-	if ($inscripted) {
-		$app->render('profil.php');
-	}
-	else {
-		$app->flash('error', 'Problème rencontré lors de l\'inscription ');
-		$app->render('inscription.php');
-	}
-})->name('inscription');*/
-
-
 
 
   // always need to be at the bottom of this file !
