@@ -38,4 +38,22 @@
             return true;
             } 
         } //commit
+
+    class Video {
+            public static function all() {
+                $bdd = DB::connexion_bdd();
+                $ma_requete = $bdd->prepare('SELECT * FROM video');
+                $res = $ma_requete->execute();
+                return $ma_requete->fetchAll();
+            return true;
+            }
+        
+            public static function getVideo($video_id) {
+                $bdd = DB::connexion_bdd();
+                $ma_requete = $bdd->prepare("SELECT * FROM video WHERE id = $video_id");
+                $res = $ma_requete->execute();
+                return $ma_requete->fetchAll();
+            return true;
+            } 
+        }
 ?>
