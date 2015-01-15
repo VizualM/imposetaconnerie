@@ -1,8 +1,6 @@
 <?php
     class Image {
-        
-        public static function all() {
-            
+         public static function all() {
             $bdd = DB::connexion_bdd();
             $ma_requete = $bdd->prepare('SELECT * FROM img');
             $res = $ma_requete->execute();
@@ -19,9 +17,7 @@
         return true;
         } 
     }
-
-
-    class Gif {
+class Gif {
             public static function all() {
                 $bdd = DB::connexion_bdd();
                 $ma_requete = $bdd->prepare('SELECT * FROM gif');
