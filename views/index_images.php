@@ -18,7 +18,7 @@
 
         <div class="images">
             <a href="<?php echo $app->urlFor('image_individuelle', array('image_id' => $image['id'])) ?>">
-                <img title="<?php echo $image['nom_image'];?>" src="img/img/<?php echo $image['nom_image'];?>"/>
+                <img title="<?php echo $image['nom_image'];?>" src="views/images/image/<?php echo $image['nom_image'];?>"/>
             </a>
         </div>
 
