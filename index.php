@@ -90,13 +90,13 @@ $app = new \Slim\Slim(array(
 // GET /videos
   $app->get('/videos', function() use ($app) {
       $video = Video::all();
-    if($videos) {
+    if($video) {
       $app->render(
           'index_videos.php',
-          array("videos" => $videos)
+          array("videos" => $video)
       );
     }
-  })->name('video');
+  })->name('videos');
 
  // GET /videos/:video_id
   $app->get('/videos_:video_id', function ($video_id) use ($app) {
@@ -104,7 +104,7 @@ $app = new \Slim\Slim(array(
     $app->render(
         'show_videos.php',
         array(
-            "video" => $videos
+            "video" => $video
         )
     );
   })->name('videos_individuelle');
