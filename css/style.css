@@ -36,20 +36,6 @@ body
         height: 100px;
     }
 
-twitter_head
-{
-    position: absolute;
-    right: 250px;
-    top: 50px;
-}
-
-facebook_head
-{
-    position: absolute;
-    right: 250px;
-    top: 20px;
-}
-
 #header #titre
     {
         float: left;
@@ -114,23 +100,10 @@ facebook_head
 
 .content_droite .twitter 
     {
-        margin-top: 150px;
+        position: absolute;
+        right: 250px;
+        top: 50px;
     }
-
-
-twitter
-{
-    position: absolute;
-    right: 250px;
-    top: 50px;
-}
-
-facebook
-{
-    position: absolute;
-    right: 250px;
-    top: 20px;
-}
 
 .clear { clear: both;}
 .inscription {

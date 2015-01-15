@@ -103,21 +103,6 @@ body
         margin-top: 150px;
     }
 
-
-twitter
-{
-    position: absolute;
-    right: 250px;
-    top: 50px;
-}
-
-facebook
-{
-    position: absolute;
-    right: 250px;
-    top: 20px;
-}
-
 .clear { clear: both;}
 .inscription {
         margin: auto;
@@ -129,4 +114,26 @@ facebook
        
         border: solid 1px gray;
         border-radius: 10px;
+}
+
+facebook_head {
+    position: absolute;
+    right: 250px;
+    top: 20px;
+}
+
+twitter_head {
+    position: absolute;
+    right: 250px;
+    top: 50px;
+}
+
+twitter {
+    position: relative;
+    left: 150px;
+}
+
+facebook {
+    position: relative;
+    top:-25px;
 }
