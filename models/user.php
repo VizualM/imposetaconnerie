@@ -15,21 +15,26 @@
         
             if($mdp==$mdp_confirm){
                 if($mail==$mail_confirm){
+                    if(isset($pseudo)){
                     
-                $req = $bdd->prepare('INSERT INTO utilisateurs(Prenom, Nom, Pseudo, MotDePasse, Email) VALUES(:prenom, :nom, :pseudo, :mdp, :mail)');
-                        $req->execute(array(
-                        
-                        'prenom' => $prenom,
-                        'nom' => $nom,
-                        'pseudo' => $pseudo,
-                        'mdp' => $mdp,
-                        'mail' => $mail
-                        ));
-                    return true;
+                        $req = $bdd->prepare('INSERT INTO utilisateurs(Prenom, Nom, Pseudo, MotDePasse, Email) VALUES(:prenom, :nom, :pseudo, :mdp, :mail)');
+                                $req->execute(array(
+
+                                'prenom' => $prenom,
+                                'nom' => $nom,
+                                'pseudo' => $pseudo,
+                                'mdp' => $mdp,
+                                'mail' => $mail
+                                ));
+                            return true;
+                    }
+                    else{
+                        echo "Entrer un pseudo.";
+                    }
                 }
                 else {
                         echo "Les deux courriels indiqué ne corresponde pas.";
-                        }
+                }
             }
             else {
                 echo "Les deux mot de passe indiqué ne corresponde pas.";
@@ -51,23 +56,25 @@
             $mdp = $_POST['MotDePasse'];
 
             if(isset($pseudo) AND $pseudo!="" AND isset($mdp) AND $mdp!="") {
+                    
 
-                $req = $bdd->prepare('SELECT * FROM utilisateurs WHERE Pseudo=:Pseudo AND MotDePasse=:MotDePasse'); 
-                $reponse = $req->execute(array(
-                    'Pseudo' => $_POST['Pseudo'],
-                    'MotDePasse' => $_POST['MotDePasse']
-                ));
-                
-                $donnees = $req->fetch();   
-                if($donnees){ 
-                    
-                    $_SESSION["Pseudo"]=$pseudo;
-                    $_SESSION["MotDePasse"]=$mdp;
-                    
-                  
-                }
+
+                $sql ="SELECT * FROM utilisateurs WHERE Pseudo='".$pseudo."' AND MotDePasse='".$mdp."'";
+                $req = $bdd->prepare($sql);
+                $result = $req-> execute();
+                $result = $req-> fetch();
+
+                $_SESSION['id_utilisateur'] = $result['ID'];
+                $_SESSION['Prenom'] = $result['Prenom'];
+                $_SESSION['Nom'] = $result['Nom'];
+                $_SESSION['Pseudo'] = $result['Pseudo'];
+                $_SESSION['Email'] = $result['Email'];
+
+
+
+
             }
             
         }
     }
-?>				          
+?>

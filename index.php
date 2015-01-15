@@ -106,11 +106,9 @@ $app->post('/inscription', function () use ($app) {
 // GET connexion.php
   $app->post('/connexion', function () use ($app) {
       $connected= user::connexion($_POST['Pseudo'], $_POST['MotDePasse']);
-      
-     var_dump($connected);
-      
+
       if($connected){
-        $app->render('profil.php');
+         $app->redirect($app->urlFor('profil'));
       }
       else{
          
@@ -125,14 +123,12 @@ $app->post('/inscription', function () use ($app) {
 
 
 // GET deconnexion.php
-    $app->get('/images', function() use ($app) {
-    if($image) {
-        $image = Image::all();
-        $app->render(
-            'index_images.php',
-            array("image" => $image)
-        );
-    }
+    $app->get('/deconnexion', function() use ($app) {
+       $deconnected = user::deconnexion();
+
+        $app->redirect($app->urlFor('images'));
+
+
   })->name('deconnexion');
 
 

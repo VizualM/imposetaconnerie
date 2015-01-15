@@ -33,7 +33,7 @@
                     { 
                     ?>
                         <li><a href="<?php echo $app->urlFor('deconnexion') ?>" >Déconnection</a></li>
-                        <li><a href="<?php //echo $app->urlFor('profil') ?>">Profil</a></li>
+                        <li><a href="<?php echo $app->urlFor('profil') ?>">Profil</a></li>
                 </ul>
                 <?php
                    }
