@@ -26,8 +26,8 @@
                 <ul>
                     <li><a href="<?php echo $app->urlFor('images') ?>" title="Images" class="icon-camera-retro icon-2x"></a></li>
                     <li><a href="<?php echo $app->urlFor('gifs') ?>"  title="Gifs" class="icon-magic icon-2x"></a></li>
-                    <li><a href="<?php //echo $app->urlFor('deconection') ?>" title="Vidéos" class="icon-facetime-video icon-2x"></a></li>
-
+                    <li><a href="<?php echo $app->urlFor('videos') ?>" title="Vidéos" class="icon-facetime-video icon-2x"></a></li>
+                    
                     <?php 
                         if(isset($_SESSION['id_utilisateur'])>0)
                     { 
@@ -63,6 +63,10 @@
 
                     }
                 ?>
+                
+                <twitter_head><a href="https://twitter.com/ImposeTC" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ImposeTC</a></twitter_head>
+                <facebook_head><div class="fb-like" data-share="true" data-width="450" data-show-faces="true" layout=button_count></div></facebook_head>
+
             </div>
         </div>
     </div>

@@ -87,6 +87,28 @@ $app = new \Slim\Slim(array(
     );
   })->name('gifs_individuelle');
 
+// GET /videos
+  $app->get('/videos', function() use ($app) {
+      $video = Video::all();
+    if($video) {
+      $app->render(
+          'index_videos.php',
+          array("videos" => $video)
+      );
+    }
+  })->name('videos');
+
+ // GET /videos/:video_id
+  $app->get('/videos_:video_id', function ($video_id) use ($app) {
+    $videos = Gif::getVideo($video_id);
+    $app->render(
+        'show_videos.php',
+        array(
+            "video" => $video
+        )
+    );
+  })->name('videos_individuelle');
+
 
 // GET inscription.php
      $app->get('/inscription', function () use ($app) {
