@@ -37,5 +37,5 @@
                 return $ma_requete->fetchAll();
             return true;
             } 
-        }
+        } //commit
 ?>
