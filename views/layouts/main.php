@@ -65,8 +65,8 @@
                     }
                 ?>
                 
-                <twitter_head><a href="https://twitter.com/ImposeTC" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ImposeTC</a></twitter_head>
-                <facebook_head><div class="fb-like" data-share="true" data-width="450" data-show-faces="true" layout=button_count></div></facebook_head>
+                <social_head><twitter_head><a href="https://twitter.com/ImposeTC" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ImposeTC</a></twitter_head>
+                <facebook_head><div class="fb-like" data-share="true" data-width="450" data-show-faces="true" layout=button_count></div></facebook_head></social_head>
 
             </div>
         </div>

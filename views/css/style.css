@@ -98,11 +98,6 @@ body
         
     }
 
-.content_droite .twitter 
-    {
-        margin-top: 150px;
-    }
-
 .clear { clear: both;}
 .inscription {
         margin: auto;
@@ -140,4 +135,11 @@ facebook {
 
 #social {
  margin-left: 2px;   
+}
+
+social_head {
+    float:right;
+    right : -200px;
+    top: -70px;
+    position: relative;
 }
