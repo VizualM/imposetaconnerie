@@ -162,6 +162,63 @@ $app->post('/inscription', function () use ($app) {
   })->name('profil');
 
 
+// POST UpdateIdentite
+  $app->post('/UpdateIdentite', function () use ($app) {
+
+        $Update = user::UpdateIdentite($_POST['pseudo'], $_POST['nom'], $_POST['prenom']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UpdateIdentite');
+
+
+
+// POST UpdateMDP
+  $app->post('/UpdateMDP', function () use ($app) {
+
+        $Update = user::UpdateMDP($_POST['Oldmdp'], $_POST['mdp'], $_POST['mdp_confirm']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UpdateMDP');
+
+
+
+// POST UpdateEmail
+  $app->post('/UpdateEmail', function () use ($app) {
+
+        $Update = user::UpdateEmail($_POST['mail'], $_POST['mail_confirm']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UpdateEmail');
+
+
+
+// POST UploadImage
+  $app->post('/UploadImage', function () use ($app) {
+
+        $Update = user::UploadImage($_POST['Titre'], $_FILES['Image']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UploadImage');
+
+
+
+// POST UploadGif
+  $app->post('/UploadGif', function () use ($app) {
+
+        $Update = user::UploadGif($_POST['Titre'], $_FILES['Gif']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UploadGif');
+
+
+
+// POST UploadVideo
+  $app->post('/UploadVideo', function () use ($app) {
+
+        $Update = user::UploadVideo($_POST['Titre'], $_POST['video']);
+        $app->redirect($app->urlFor('profil'));
+
+  } )->name('UploadVideo');
 
 
   // always need to be at the bottom of this file !
