@@ -6,8 +6,8 @@
             <p>
             <label for="pseudo">Identité</label><br/>
             <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo : <?php echo $_SESSION['Pseudo'] ?>" size="30" /><br/><br/>
-            <input type="text" name="nom" id="nom" placeholder="nom : <?php echo $_SESSION['Nom'] ?>" size="30" /><br/><br/>
-            <input type="text" name="prenom" id="prenom" placeholder="prenom : <?php echo $_SESSION['Prenom'] ?>" size="30" /><br/><br/>
+            <input type="text" name="nom" id="nom" placeholder="Nom : <?php echo $_SESSION['Nom'] ?>" size="30" /><br/><br/>
+            <input type="text" name="prenom" id="prenom" placeholder="Prenom : <?php echo $_SESSION['Prenom'] ?>" size="30" /><br/><br/>
 
             <input type="submit" value="Valider la/les modification(s)" class="valider" />
         </form>
