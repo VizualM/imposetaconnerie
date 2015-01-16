@@ -10,7 +10,7 @@
     <div class="content_gauche">
 
         <div class="info_image">
-            <h2><?php echo $image['titre'];?></h2>
+            <h2><?php echo utf8_encode ($image['titre']);?></h2>
             <p>Date: <?php echo $image['date'];?></p>
             <p>Auteur: <?php echo $image['auteur'];?></p>
 

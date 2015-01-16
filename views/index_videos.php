@@ -10,7 +10,7 @@
     <div class="content_gauche">
 
         <div class="info_video">
-            <h2><?php echo $video['titre'];?></h2>
+            <h2><?php echo utf8_encode ($video['titre']);?></h2>
             <p>Date: <?php echo $video['date'];?></p>
             <p>Auteur: <?php echo $video['auteur'];?></p>
         </div>

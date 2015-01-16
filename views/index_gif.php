@@ -10,7 +10,7 @@
     <div class="content_gauche">
 
         <div class="info_image">
-            <h2><?php echo $gif['titre'];?></h2>
+            <h2><?php echo utf8_encode ($gif['titre']);?></h2>
             <p>Date: <?php echo $gif['date'];?></p>
             <p>Auteur: <?php echo $gif['auteur'];?></p>
 
