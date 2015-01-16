@@ -116,6 +116,14 @@ body
         border-radius: 10px;
 }
 
+
+.profil {
+    margin-left: 28%;
+    margin-top: 10%;
+    margin-bottom: 10%
+}
+
+
 facebook_head {
     position: absolute;
     right: 250px;
@@ -137,3 +145,4 @@ facebook {
     position: relative;
     top:-25px;
 }
+
