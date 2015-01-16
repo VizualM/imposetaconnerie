@@ -4,7 +4,7 @@
         public static function all() {
             
             $bdd = DB::connexion_bdd();
-            $ma_requete = $bdd->prepare('SELECT * FROM img');
+            $ma_requete = $bdd->prepare('SELECT * FROM img ORDER BY date DESC');
             $res = $ma_requete->execute();
             $toto = $ma_requete->fetchAll();
             return $toto;
@@ -24,7 +24,7 @@
     class Gif {
             public static function all() {
                 $bdd = DB::connexion_bdd();
-                $ma_requete = $bdd->prepare('SELECT * FROM gif');
+                $ma_requete = $bdd->prepare('SELECT * FROM gif ORDER BY date DESC');
                 $res = $ma_requete->execute();
                 return $ma_requete->fetchAll();
             return true;
