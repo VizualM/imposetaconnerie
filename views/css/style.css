@@ -147,5 +147,6 @@ facebook {
 social_head {
     float:right;
     right : -200px;
+    top: -70px;
     position: relative;
 }
