@@ -42,7 +42,7 @@
     class Video {
             public static function all() {
                 $bdd = DB::connexion_bdd();
-                $ma_requete = $bdd->prepare('SELECT * FROM video');
+                $ma_requete = $bdd->prepare('SELECT * FROM video ORDER BY date DESC');
                 $res = $ma_requete->execute();
                 return $ma_requete->fetchAll();
             return true;
