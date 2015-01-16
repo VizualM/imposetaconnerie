@@ -8,6 +8,7 @@
     
       <link href="views/css/style.css" rel="stylesheet" type="text/css" media="all" />
       <link rel="stylesheet" href="views/css/kickstart.css" media="all" />
+      <link rel="shortcut icon" href="views/images/logo.ico">
       
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="views/js/kickstart.js"></script> 
