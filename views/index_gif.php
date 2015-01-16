@@ -17,7 +17,7 @@
         </div>
 
         <div class="images">
-            <a href="<?php echo $app->urlFor('gifs_individuelle', array('gif_id' => $gif['id'])) ?>"><img title="<?php echo $gif['nom_image'];?>" src="img/gif/<?php echo $gif['nom_image'];?>"/></a>
+            <a href="<?php echo $app->urlFor('gifs_individuelle', array('gif_id' => $gif['id'])) ?>"><img title="<?php echo $gif['nom_image'];?>" src="views/images/gif/<?php echo $gif['nom_image'];?>"/></a>
         </div>
 
     </div>
