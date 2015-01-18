@@ -100,9 +100,10 @@ body
 
 .clear { clear: both;}
 .inscription {
-        margin: auto;
-        position: absolute;
-        width: auto;
+        margin-left: 40%;
+        margin-top: 0%;
+        margin-bottom: 15%;
+        width: 20%;
         
         
         background-color: white;
