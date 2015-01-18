@@ -37,10 +37,18 @@
   js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1494049274210999&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="530" data-numposts="4" data-colorscheme="light"></div>
+            <div class="fb-comments" data-href="http://imposetaconnerie.herokuapp.com/gifs_<?php echo $gif['id'];?>" data-width="530" data-numposts="4" data-colorscheme="light"></div>
             <twitter><a href="https://twitter.com/share" class="twitter-share-button" data-text="<?php echo utf8_encode ($gif['titre']);?>" data-url="http://imposetaconnerie.herokuapp.com/gifs_<?php echo $gif['id'];?>" data-via="ImposeTC">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></twitter>
-            <facebook><div id="fb-root"></div><script src="http://connect.facebook.net/fr_FR/all.js#xfbml=1"></script><div class="fb-like" data-share="false" data-width="450" data-show-faces="true" layout=button_count></div></facebook>
+            <facebook><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1494049274210999&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-share-button" data-href="http://imposetaconnerie.herokuapp.com/gifs_<?php echo $gif['id'];?>" data-layout="button_count"></div></facebook>
         </ul>   
     </div>
     

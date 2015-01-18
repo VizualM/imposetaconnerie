@@ -65,9 +65,17 @@
                     }
                 ?>
                 
-                <social_head><twitter_head><a href="https://twitter.com/ImposeTC" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @ImposeTC</a>
+                <social_head><twitter_head><a href="https://twitter.com/ImposeTC" class="twitter-follow-button" data-show-count="false" data-size="medium">Follow @ImposeTC</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></twitter_head>
-                <facebook_head><div class="fb-like" data-share="true" data-width="450" data-show-faces="true" layout=button_count></div></facebook_head></social_head>
+                <facebook_head><div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1494049274210999&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-share-button" data-href="https://www.facebook.com/ImposeTaConnerie" data-layout="button"></div></facebook_head></social_head>
 
             </div>
         </div>
