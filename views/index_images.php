@@ -7,7 +7,7 @@
 <meta property="og:title"  content="Impose Ta Connerie" />
 <meta name="twitter:card" content="photo" />
 <meta name="twitter:site" content="@ImposeTC" />
-<meta name="twitter:image" content="http://imposetaconnerie.herokuapp.com/views/images/image/sante.jpg" />
+<meta name="twitter:image" content="http://imposetaconnerie.herokuapp.com/views/images/image/<?php echo $image['nom_image'];?>" />
 
 
 <div class="article">
