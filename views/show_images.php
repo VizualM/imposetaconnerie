@@ -1,9 +1,10 @@
 <div class="article">
+<meta property="og:site_name" content="Impose Ta Connerie" />
 <meta property="fb:admins" content="838777807"/>
-<meta property="fb:app_id" content="1494049274210999" /> 
+<meta property="fb:page_id"content="1524585554490457" /> 
 <meta property="og:type"   content="website" /> 
 <meta property="og:url"    content="http://imposetaconnerie.herokuapp.com/" /> 
-<meta property="og:title"  content="Impose Ta Connerie" />
+<meta property="og:title"  content="Impose Ta Connerie" />  
 
     <div class="content_gauche">
 
