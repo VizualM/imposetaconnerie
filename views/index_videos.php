@@ -32,8 +32,8 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="530" data-numposts="4" data-colorscheme="light"></div>
-            <twitter><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="Impose Ta Connerie">Tweet</a>
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></twitter>
+            <twitter><a href="https://twitter.com/share" class="twitter-share-button" data-text="<?php echo utf8_encode ($video['titre']);?>" data-url="https://www.youtube.com/watch?v=<?php echo $video['lien'];?>" data-via="ImposeTC">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></twitter>
             <facebook><div id="fb-root"></div><script src="http://connect.facebook.net/fr_FR/all.js#xfbml=1"></script><div class="fb-like" data-share="false" data-width="450" data-show-faces="true" layout=button_count></div></facebook>
         </ul>   
     </div>
